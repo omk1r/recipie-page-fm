@@ -1,0 +1,128 @@
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  background-color: var(--eggshell);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container {
+  margin: 5em;
+  max-width: 30em;
+  background-color: var(--white);
+  border-radius: 1em;
+  padding: 1.6em;
+}
+#img img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+section {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.4em;
+  border-bottom: 0.5px solid var(--light-grey);
+}
+section:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+section div {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+#heading1 h2 {
+  font-family: Young Serif;
+  font-weight: 400;
+  font-size: 1.55em;
+}
+.description {
+  font-weight: 500;
+  font-size: 0.65em;
+  color: var(--wenge-brown);
+  line-height: 1.4em;
+}
+.prepare-section {
+  background-color: var(--rose-white);
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  padding: 0.5em 2em 0.5em 0.9em;
+  border-radius: 0.5em;
+}
+#pre-heading {
+  color: var(--dark-raspberry);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.list {
+  padding-left: 1.8em;
+  font-size: 0.65em;
+}
+ul li,
+ol li {
+  padding: 0.3em 0.2em 0.3em 0.8em;
+  color: var(--wenge-brown);
+  font-weight: 500;
+  line-height: 1.4em;
+}
+ul li span,
+ol li span {
+  font-weight: 700;
+  color: var(--wenge-brown);
+}
+#heading {
+  color: var(--nutmeg);
+  font-weight: 400;
+  font-family: Young Serif;
+  font-size: 1.1em;
+}
+table {
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.65em;
+  margin-top: 0.8em;
+  border-collapse: collapse;
+}
+table td {
+  color: var(--wenge-brown);
+}
+table td:nth-child(2) {
+  color: var(--dark-raspberry);
+  font-weight: 700;
+}
+table td {
+  padding: 0.5rem;
+  padding-left: 2em;
+  border-bottom: var(--light-grey) 1px solid;
+}
+table tr:last-child td {
+  border: none;
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin: 0;
+  }
+  #img img {
+    padding: 0;
+    border-radius: 0;
+  }
+}
